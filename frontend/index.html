@@ -1,0 +1,25 @@
+<html>
+<head><title>VTU Results</title></head>
+<body>
+  <h1>VTU Examination Results (Demo)</h1>
+  <input id="usn" placeholder="Enter USN e.g. 4MW23CS001">
+  <button onclick="show()">Get Result</button>
+  <pre id="out"></pre>
+  <script>
+    function show(){
+      const usn = document.getElementById('usn').value || '4MW23CS001';
+      const demo = {
+        usn: usn,
+        semester: 5,
+        marks: [
+          {code:'CS601',name:'DBMS',credits:4,grade:'A',gradePoint:9},
+          {code:'CS602',name:'ADA',credits:4,grade:'B',gradePoint:8}
+        ],
+        sgpa: 8.5,
+        cgpa: 8.1
+      };
+      document.getElementById('out').textContent = JSON.stringify(demo, null, 2);
+    }
+  </script>
+</body>
+</html>
