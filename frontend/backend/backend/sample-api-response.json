@@ -1,0 +1,11 @@
+{
+  "usn": "4MW23CS001",
+  "studentName": "Demo Student",
+  "semester": 6,
+  "results": [
+    {"code": "CS601", "name": "DBMS", "marks": 89, "grade": "A", "gradePoint": 9},
+    {"code": "CS602", "name": "ADA", "marks": 76, "grade": "B", "gradePoint": 8}
+  ],
+  "sgpa": 8.5,
+  "cgpa": 8.1
+}
